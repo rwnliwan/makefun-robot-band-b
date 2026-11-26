@@ -37,3 +37,21 @@
   78 bytes UTF-8, gate 1–200 PASS. `node --check main.ts` clean.
   Trial-log revised with these real numbers (revision 1 of 2 planned:
   bundle v1 + check results follow after commit).
+- Bundle v1 DONE (26 Nov 17:47 WITA): `bundle-v1.tar.gz`, 188,215 bytes,
+  sha256 `ba58d8137784a181779a66928946aa4b34cd8043fc863c9dc960abee18a52f4d`,
+  1 session (34 turns, 119 lines), prompt from `prompt-3b.txt`
+  (origin other, via "batch-10prog builder 3b"). Warning (expected, builder
+  ceiling): 0 usage rows attached — subagent rows flush only when the run
+  completes; coordinator re-bundles with `--muse-usage` from muse.db.
+- Check v1 DONE (26 Nov 17:48 WITA, kit fresh, commit
+  `52c1d48833266c8d262e3c267658acea50c0c522`): **13 passed / 1 failed /
+  5 skipped, 5 checked at submission.** Only failure = `thinking_priced`
+  (0 usage rows — the known builder ceiling, coordinator's re-bundle fixes
+  it). `thinking_revised` PASS (trial-log from 2 messages),
+  `thinking_reproduces` 96.4% (55/57 lines, main.ts 8 authored lines),
+  `thinking_turns` 27, gate/license/entrypoint/snapshot all PASS.
+  Repo public, About set (homepage + topics ai-agents/bounties/makefun),
+  HEAD = ls-remote = `52c1d48…`, tree clean.
+- Trial-log revised with bundle v1 + check v1 real numbers (revision 2);
+  commit + push + re-bundle v2 from final HEAD follow. DO NOT SUBMIT —
+  coordinator owns submit after re-bundle + re-check 14/0.
